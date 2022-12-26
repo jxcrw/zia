@@ -46,13 +46,15 @@ M.default = {
 }
 
 M.experimental = {
-   orange = '#ffa283',
-   yellow2 = '#fec083',
-   yellow = '#fee684',
-   yellow3 = '#ffd486',
-   yelloworange = '#F7B273',
-   pinkorange = '#fe5e78',
    pink = '#ff217c',
+   pinkorange = '#fe5e78',
+   red = '#f7768e',
+   coral = '#f88379',
+   orange = '#ffa283',
+   yelloworange = '#F7B273',
+   yellow2 = '#fec083',
+   yellow3 = '#ffd486',
+   yellow = '#fee684',
    cyan = '#2efddf',
    cyan2 = '#0cffe1',
    cyan3 = '#00dfd4',
