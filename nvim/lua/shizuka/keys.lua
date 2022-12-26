@@ -210,7 +210,7 @@ K(I, '<S-Right>' , O .. 'v', oq)      -- Select char right
 
 K(A, '<S-Up>' , E .. 'v<Up>', oq)     -- Select line up
 K(V, '<S-Up>' , '<Up>', oq)           -- Select line up
-K(A, '<S-Down>' , E .. 'v<Down', oq) -- Select line down
+K(A, '<S-Down>' , E .. 'v<Down>', oq) -- Select line down
 K(V, '<S-Down>' , '<Down>', oq)       -- Select line down
 K(A, '<S-Home>', E .. 'v^', oq)       -- Select to BOL
 K(V, '<S-Home>', '^', oq)             -- Select to BOL
