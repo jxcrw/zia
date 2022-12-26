@@ -61,8 +61,8 @@ bufferline.setup {
 
    -- Enable/disable diagnostic symbols
    diagnostics = {
-      { enabled = true, icon = '' }, -- ERROR
-      { enabled = true, icon = '' }, -- WARN
+      { enabled = false, icon = '' }, -- ERROR
+      { enabled = false, icon = '' }, -- WARN
       { enabled = false }, -- INFO
       { enabled = false }, -- HINT
    },
