@@ -85,6 +85,9 @@ flake8==4.0.1
   - pyflakes [required: >=2.4.0,<2.5.0, installed: 2.4.0]
 ftfy==6.1.1
   - wcwidth [required: >=0.2.5, installed: 0.2.5]
+GitPython==3.1.29
+  - gitdb [required: >=4.0.1,<5, installed: 4.0.10]
+    - smmap [required: >=3.0.1,<6, installed: 5.0.0]
 grip==4.6.1
   - docopt [required: >=0.4.0, installed: 0.6.2]
   - Flask [required: >=0.10.1, installed: 2.2.2]

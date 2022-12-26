@@ -184,15 +184,15 @@ push() {
   # Sync files to remote
   n_args=$#
   log_file='C:\~\.sel\.logs\rclone_push.log'
-  exclude_file='C:\~\.sel\.menv\rclone_exclude.txt'
+  exclude_file='C:\~\.sel\_env\rclone_exclude.txt'
 
   if [[ $n_args -eq 0 ]] then
-    python "C:\~\.sel\.scripts\fastscan.py"
+    python "C:\~\.sel\_src\fastscan.py"
     echo "push fast..."
     rclone copy "C:/" "GD:/" --progress --no-traverse --files-from $fastscan_temp --copy-links
 
   elif [[ $1 == "all" ]] then
-    python "C:\~\.sel\.scripts\fastscan.py"
+    python "C:\~\.sel\_src\fastscan.py"
     echo "kopia snapshot..."
     kopia.exe snapshot create --all --log-level=warning --no-progress >> /mnt/c/~/.sel/.logs/kopia.log 2>&1
     echo "push all..."
@@ -236,9 +236,9 @@ pull() {
 freeze() {
   # Freeze current environment (apps/packages/envars/etc.)
   echo -n $fg[cyan]
-  echo -n freezing scoop... ; scoop export > '/mnt/c/~/.sel/.menv/scoop.json'
-  echo -n python... ; pipdeptree > '/mnt/c/~/.sel/.menv/python.txt'
-  echo -n envars... ; reg.exe export 'HKEY_CURRENT_USER\Environment' 'C:\~\.sel\.menv\envars.reg' /y > /dev/null
+  echo -n freezing scoop... ; scoop export > '/mnt/c/~/.sel/_env/scoop.json'
+  echo -n python... ; pipdeptree > '/mnt/c/~/.sel/_env/python.txt'
+  echo -n envars... ; reg.exe export 'HKEY_CURRENT_USER\Environment' 'C:\~\.sel\_env\envars.reg' /y > /dev/null
   echo "done\n"$reset_color
   # freeze file associations
   # freeze non-scoop apps
@@ -247,8 +247,8 @@ freeze() {
 thaw() {
   # Thaw frozen environment (packages/envars/etc.)
   echo "thawing..."
-  scoop import "C:\~\.sel\.menv\scoop.json"
-  pip install -r 'C:\~\.sel\.menv\python.txt' --upgrade
-  reg.exe import 'C:\~\.sel\.menv\envars.reg'
+  scoop import "C:\~\.sel\_env\scoop.json"
+  pip install -r 'C:\~\.sel\_env\python.txt' --upgrade
+  reg.exe import 'C:\~\.sel\_env\envars.reg'
   # everything opposite of freeze :)
 }
