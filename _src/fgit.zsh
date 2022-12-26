@@ -94,7 +94,8 @@ git_command=$1
 
 git_repos=$(fd -HI --type d \.git$ | sort | rev | cut -c 7- | rev | cut -c 3-)
 git_repos=(${(f)git_repos}) # Split plaintext list of found repos on newlines to create a proper array
-echo "\nRunning 'git "$@"' on ${#git_repos[@]} repos in: ${PWD}\n"
+
+echo "\nRunning $fg[green]git "$@"$reset_color on ${#git_repos[@]} repos in $fg[cyan]${PWD}$reset_color\n"
 echo $fg[black]$(date)$reset_color
 
 i=0
