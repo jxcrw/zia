@@ -550,11 +550,12 @@ K(A, "<M-.>", E .. ':Gitsigns prev_hunk<CR>', oq)               -- Prev hunk
 K(A, "<M-ScrollWheelUp>", E .. ':Gitsigns prev_hunk<CR>', oq)   -- Prev hunk
 
 -- Stage
-K(A, '<C-S-F7>', E .. ':Gitsigns stage_buffer<CR>', oq)         -- Add buffer
-K(A, '<C-S-a>', E .. ':Gitsigns stage_hunk<CR>', oq)            -- Add hunk
-K(V, '<C-S-a>', E .. ":'<,'>Gitsigns stage_hunk<CR>", oq)       -- Add hunk
-K(A, "<C-S-F4>", E .. ":Gitsigns reset_hunk<CR>", oq)           -- Reset hunk
-K(V, "<C-S-F4>", E .. ":'<,'>Gitsigns reset_hunk<CR>", oq)      -- Reset hunk
+K(A, '<M-C-F8>', E .. ':Git add -A<CR>', oq)               -- Add all
+K(A, '<C-S-F7>', E .. ':Gitsigns stage_buffer<CR>', oq)    -- Add buffer
+K(A, '<C-S-a>', E .. ':Gitsigns stage_hunk<CR>', oq)       -- Add hunk
+K(V, '<C-S-a>', E .. ":'<,'>Gitsigns stage_hunk<CR>", oq)  -- Add hunk
+K(A, "<C-S-F4>", E .. ":Gitsigns reset_hunk<CR>", oq)      -- Reset hunk
+K(V, "<C-S-F4>", E .. ":'<,'>Gitsigns reset_hunk<CR>", oq) -- Reset hunk
 
 -- Commit
 K(A, '<M-C-D-F3>', E .. ':tab Git commit --quiet<CR><Insert>', oq)   -- Commit
