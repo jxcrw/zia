@@ -1,0 +1,210 @@
+{
+  "$help": "https://aka.ms/terminal-documentation",
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+
+  // Startup config
+  "defaultProfile": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
+  // "launchMode": "focus",
+  "initialPosition": "2,1044",
+  "initialRows": 36,
+  "initialCols": 155,
+  // "startupActions": "nt -d C:\\~ ; nt -d \"C:\\~\\DV\\Dokugaku\\00 - Pazuru\"",
+
+  // Global config
+  "windowingBehavior": "useAnyExisting",
+  "startOnUserLogin": true,
+  "confirmCloseAllTabs": false,
+  "copyOnSelect": true,
+  "disableAnimations": true,
+  "disabledProfileSources": ["Windows.Terminal.Azure", "Windows.Terminal.VisualStudio" ],
+  "tabSwitcherMode": "disabled",
+  "tabWidthMode": "titleLength",
+  "useAcrylicInTabRow": false,
+
+  "theme": "TokyoNight",
+  "profiles":
+  {
+    "defaults":
+    {
+      "colorScheme": "TokyoNight",
+      "font": { "face": "Consolas", "size": 11 },
+      // "tabColor": "#272822",
+      "useAcrylic": false,
+      "opacity": 100,
+      // "backgroundImage": "C:\\~\\dev\\aesthetics\\avatars\\penguin\\penguin_goofy.png",
+      "backgroundImageAlignment": "bottomRight",
+      "backgroundImageOpacity": 0.5,
+      "backgroundImageStretchMode": "none",
+      "unfocusedAppearance": { "experimental.retroTerminalEffect": false },
+      "experimental.autoMarkPrompts": true,
+    },
+    "list":
+    [
+      {
+        "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
+        "hidden": false,
+        "icon": "",
+        "name": "arch",
+        "source": "Windows.Terminal.Wsl",
+        "tabTitle": "~",
+        // "icon": "",
+      },
+      {
+        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+        "hidden": false,
+        "name": "cmd",
+        // "icon": "",
+      },
+      {
+        "commandline": "powershell.exe -nologo",
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "hidden": false,
+        "name": "Windows PowerShell",
+        "tabTitle": "PS",
+        // "icon": "",
+      },
+    ]
+  },
+
+  // Color Schemes/Themes
+  "schemes":
+  [
+    {
+      "name": "Monokai",
+      "background": "#272822",
+      "foreground": "#f1f1e4",
+      "cursorColor": "#ffffff",
+      "selectionBackground": "#49483e",
+      "black": "#75715e",
+      "blue": "#528bff",
+      "cyan": "#66d9ef",
+      "green": "#a6e22e",
+      "purple": "#ae81ff",
+      "red": "#f94989",
+      "white": "#f1f1e4",
+      "yellow": "#ffb217",
+      "brightBlack": "#75715e",
+      "brightBlue": "#81aaff",
+      "brightCyan": "#66d9ef",
+      "brightGreen": "#a6e22e",
+      "brightPurple": "#ae81ff",
+      "brightRed": "#fa7aa9",
+      "brightWhite": "#f1f1e4",
+      "brightYellow": "#ffb217",
+    },
+    {
+    "name": "TokyoNight",
+    "foreground": "#c0caf5",
+    "background": "#1a1b26",
+    "cursorColor": "#cad3f5",
+    "selectionBackground": "#304b4f",
+    "black": "#414868",
+    "red": "#f7768e",
+    "green": "#9ece6a",
+    "yellow": "#F7B273",
+    "blue": "#7aa2f7",
+    "purple": "#bb9af7",
+    "cyan": "#2ac3de",
+    "white": "#c0caf5",
+    "brightBlack": "#414868",
+    "brightRed": "#f7768e",
+    "brightGreen": "#9ece6a",
+    "brightYellow": "#F7B273",
+    "brightBlue": "#7aa2f7",
+    "brightPurple": "#bb9af7",
+    "brightCyan": "#2ac3de",
+    "brightWhite": "#c0caf5"
+    }
+  ],
+  "themes":
+  [
+    {
+      "name": "Monokai",
+      "window": { "applicationTheme": "dark" },
+      "tab": {
+        "background": "terminalBackground",
+        "unfocusedBackground": "#1d1e1900",
+        "showCloseButton": "never"
+      },
+      "tabRow": {
+        "background": "#1d1e19",
+        "unfocusedBackground": "#1d1e19"
+      }
+    },
+    {
+      "name": "TokyoNight",
+      "window": { "applicationTheme": "dark" },
+      "tab": {
+        "background": "terminalBackground",
+        "unfocusedBackground": "#1a1b26",
+        "showCloseButton": "never"
+      },
+      "tabRow": {
+        "background": "#16161e",
+        "unfocusedBackground": "#1a1b26"
+      }
+    },
+  ],
+
+  // Keymap
+  "actions":
+  [
+    // { "keys": "win+ctrl+alt+shift+`", "command": { "action": "globalSummon", "name": "_quake", "monitor": "any", "dropdownDuration": 1 } },
+    { "keys": "win+ctrl+alt+shift+-", "command": { "action": "globalSummon", "monitor": "any", "dropdownDuration": 1 } },
+    { "keys": "win+ctrl+alt+shift+f1", "command": { "action": "openSettings", "target": "settingsFile" } },
+    { "keys": "ctrl+alt+shift+f1", "command": { "action": "openSettings", "target": "settingsUI" } },
+    { "keys": "ctrl+shift+p", "command": { "action": "commandPalette" } },
+
+     { "keys": "ctrl+n", "command": "newWindow" },
+
+    { "keys": "f2", "command": "openTabRenamer" },
+    { "keys": "ctrl+t", "command": { "action": "newTab"} },
+    { "keys": "ctrl+alt+u", "command": { "action": "newTab", "index": 0 } },
+    { "keys": "ctrl+alt+c", "command": { "action": "newTab", "index": 1 } },
+    { "keys": "ctrl+alt+p", "command": { "action": "newTab", "index": 2 } },
+    { "keys": "ctrl+alt+shift+w", "command": "closeOtherTabs" },
+
+    { "keys": "ctrl+f4", "command": "closePane" },
+    { "keys": "alt+shift+1", "command": { "action": "splitPane", "split": "horizontal" } },
+    { "keys": "alt+shift+3", "command": { "action": "splitPane", "split": "vertical" } },
+
+    { "keys": "ctrl+shift+4", "command": { "action": "moveFocus", "direction": "up" } },
+    { "keys": "ctrl+shift+5", "command": { "action": "moveFocus", "direction": "down" } },
+    { "keys": "ctrl+shift+6", "command": { "action": "moveFocus", "direction": "left" } },
+    { "keys": "ctrl+shift+7", "command": { "action": "moveFocus", "direction": "right" } },
+
+    { "keys": "alt+shift+6", "command": { "action": "resizePane", "direction": "up" } },
+    { "keys": "alt+shift+7", "command": { "action": "resizePane", "direction": "down" } },
+    { "keys": "alt+shift+8", "command": { "action": "resizePane", "direction": "left" } },
+    { "keys": "alt+shift+9", "command": { "action": "resizePane", "direction": "right" } },
+
+    { "keys": "ctrl+c", "command": "copy" },
+    { "keys": "ctrl+v", "command": "paste" },
+    { "command": "tabSearch", "keys": "win+ctrl+alt+shift+f3" },
+
+    { "keys": "ctrl+home", "command": "scrollToTop" },
+    { "keys": "ctrl+end", "command": "scrollToBottom" },
+    { "keys": "pgup", "command": "scrollUpPage" },
+    { "keys": "pgdn", "command": "scrollDownPage" },
+    { "keys": "alt+.", "command": { "action": "scrollToMark", "direction": "previous" } },
+    { "keys": "alt+,", "command": { "action": "scrollToMark", "direction": "next" } },
+
+    { "keys": "ctrl+f", "command": "find" },
+    { "keys": "f3", "command": { "action": "findMatch", "direction": "next" } },
+    { "keys": "ctrl+shift+f", "command": "tabSearch" },
+
+    { "keys": "f4", "command": { "action": "sendInput", "input": "explorer.exe .\r" } },
+
+    { "keys": "f10", "command": "toggleFocusMode" },
+    { "keys": "tab", "command": { "action": "sendInput", "input": "\t" } },
+    { "keys": "f5", "command": { "action": "sendInput", "input": "!!\r" } },
+    { "keys": "win+ctrl+alt+shift+g", "command": { "action": "sendInput", "input": "git logs\r" } },
+    { "keys": "ctrl+alt+s", "command": { "action": "sendInput", "input": "git status\r" } },
+    { "keys": "ctrl+alt+i", "command": { "action": "sendInput", "input": "git push\r" } },
+    { "keys": "ctrl+alt+shift+i", "command": { "action": "sendInput", "input": "git push -f\r" } },
+
+    { "keys": "win+`", "command": "null" },
+    { "keys": "ctrl+`", "command": "null" }
+
+  ],
+}

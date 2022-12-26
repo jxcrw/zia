@@ -1,0 +1,5 @@
+fd.log
+rclone_push.log
+rclone_pull.log
+*.link.html
+.pytest_cache

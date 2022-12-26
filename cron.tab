@@ -1,0 +1,25 @@
+# Crontab on WSL: https://www.howtogeek.com/746532/how-to-launch-cron-automatically-in-wsl-on-windows-10-and-11/
+# Reload this file: 'crontab /mnt/c/~/.sel/cron.tab'
+# To set PATH: 'env > my_env', copy PATH and SHELL vars into here
+MAIL=""
+SHELL=/usr/bin/zsh
+PATH=PATH=/mnt/c/~/.local/bin:/mnt/c/~/.poetry/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/scoop/apps/flutter/current/bin/cache/dart-sdk/bin:/mnt/c/scoop/apps/temurin8-jdk/current/bin:/mnt/c/scoop/apps/android-sdk/current/tools/bin:/mnt/c/scoop/apps/openjdk/current/bin:/mnt/c/scoop/apps/python/current/Scripts:/mnt/c/scoop/apps/python/current:/mnt/c/scoop/shims:/mnt/c/Users/jak/AppData/Local/Microsoft/WindowsApps:/mnt/c/scoop/apps/intellij-idea-ce/current/bin
+DATEVAR=($date)
+
+# fd
+* * * * * fd.exe --absolute-path --hidden --exclude .git --type file . "C:\~" "C:\scoop" "C:\Users\jak\AppData" > '/mnt/c/~/.sel/.var/fd.log'
+
+# Scoop
+*/15 * * * * scoop update > /dev/null 2>> /mnt/c/~/.sel/.logs/scoop.log
+
+# Kopia
+0 * * * * kopia.exe snapshot create --all --log-level=warning --no-progress >> /mnt/c/~/.sel/.logs/kopia.log 2>&1
+30 * * * * kopia.exe content verify --log-level=warning >> /mnt/c/~/.sel/.logs/kopia.log 2>&1
+0 21 * * SAT kopia.exe content verify >> /mnt/c/~/.sel/.logs/kopia.log 2>&1
+
+# Log Checker
+30 21 * * * python.exe "C:\~\.sel\_src\check_logs.py" 2>> /mnt/c/~/.sel/.logs/check_logs.log
+
+# Delete silly files
+*/15 * * * * rm .sudo_as_admin_successful
+*/15 * * * * rm /mnt/c/Users/jak/.vivaldi_reporting_data

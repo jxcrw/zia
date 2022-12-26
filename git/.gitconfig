@@ -1,0 +1,81 @@
+# ┌─────────────────────────────────────────────────────────────────────────────
+# │ Basic
+# └─────────────────────────────────────────────────────────────────────────────
+[user]
+	name = Jak Crow
+	email = jak@jxcrw.io
+[core]
+	# editor = subl --wait --new-window
+	editor = neovide.exe --multigrid --nofork
+	excludesfile = "C:\\~\\.sel\\git\\.gitignore_global"
+	autocrlf = input
+	eol = lf
+	quotePath = false
+	ignorecase = false
+[mailmap]
+	file = "C:\\~\\.sel\\git\\mailmap"
+[init]
+	defaultBranch = main
+[commit]
+	verbose = true
+[push]
+	autoSetupRemote = true
+[pull]
+	rebase = false
+[advice]
+	addIgnoredFile = false
+	statusHints = false
+[credential]
+    helper = manager-core
+; [credential "github.com"]
+; 	useHttpPath = true
+
+# ┌─────────────────────────────────────────────────────────────────────────────
+# │ Aliases
+# └─────────────────────────────────────────────────────────────────────────────
+[alias]
+	logs = log -20 --pretty=\"format:%C(black)%h %C(magenta)%ad %C(cyan)%aN %Creset%s\" --date=\"format:%Y-%m-%d\" --abbrev=6 --graph
+	drop = reset HEAD~
+
+# ┌─────────────────────────────────────────────────────────────────────────────
+# │ Tooling
+# └─────────────────────────────────────────────────────────────────────────────
+[diff]
+	tool = intellij
+[difftool "intellij"]
+	cmd = cmd.exe //c "\"idea.bat\" diff \"$LOCAL\" \"$REMOTE\""
+[difftool]
+	prompt = false
+
+[merge]
+	tool = intellij
+[mergetool "intellij"]
+	cmd = cmd.exe //c "\"idea.bat\" merge \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
+	trustExitCode = false
+[mergetool]
+	prompt = false
+
+# ┌─────────────────────────────────────────────────────────────────────────────
+# │ Styling
+# └─────────────────────────────────────────────────────────────────────────────
+[color]
+    diff = auto
+    status = auto
+
+[color "diff"]
+	context = black
+	meta = yellow
+	frag = yellow
+	func = blue
+
+[color "status"]
+	header = black
+	added = cyan
+	changed = yellow
+	untracked = green
+	deleted = red
+	unmerged = red
+	branch = cyan
+	localBranch = cyan
+	remoteBranch = blue
+

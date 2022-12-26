@@ -1,0 +1,4 @@
+cmatrix
+manpages
+tree
+zsh

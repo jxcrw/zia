@@ -1,0 +1,10 @@
+.var/
+.logs/
+.trash/
+.local/
+.installers/
+
+zsh/.zsh_hist
+
+scoop/config.json
+packer_compiled.lua
