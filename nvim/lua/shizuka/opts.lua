@@ -58,7 +58,19 @@ vim.cmd [[set formatoptions-=cro]]
 vim.cmd [[ autocmd FileType * set formatoptions-=cro]]  -- Don't continue comments on next line
 
 -- vim.cmd [[ autocmd BufRead,BufNewFile * start]]     -- Open files in insert mode
-vim.cmd [[ autocmd BufWritePre * %s/\s\+$//e]]      -- Trim trailing whitespace at end of lines
+
+-- Trim trailing whitespace at end of lines
+vim.cmd [[
+function! s:StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+
+autocmd BufWritePre * :call s:StripTrailingWhitespaces()
+]]
+
 vim.cmd [[ autocmd FileType help  setlocal number]] -- Show line numbers in help files
 vim.cmd [[ helptags ALL]]                           -- Update helptags
 
