@@ -1,6 +1,9 @@
 #!/usr/bin/env zsh
 # zsh keymap
 
+bindkey -e '^[[H' beginning-of-line
+bindkey -e '^[[F' end-of-line
+
 bindkey -e '^[[2~' overwrite-mode       # Insert
 bindkey -e '^H'    backward-kill-word   # Ctrl+backspace
 bindkey -e '^Z'    undo                 # Shift+tab undo last action
