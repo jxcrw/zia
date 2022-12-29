@@ -60,7 +60,7 @@ alias Chinese='python "$HOME/langs/zh/Chinese Grammar Wiki/study.py"'
 alias matrix='cmatrix -u 15 -s'
 alias rename='python "$WINHOME/.sel/_src/rename.py"'
 
-robocopy() { robocopy.exe "$1" "$2" /mir /MT:14 /unilog:copy.log }
+robocopy() { robocopy.exe "$1" "$2" /mir /MT:14 /unilog:"C:/~/.sel/.var/robocopy.log" }
 
 # ┌─────────────────────────────────────────────────────────────────────────────
 # │ Zsh General
