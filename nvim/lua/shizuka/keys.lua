@@ -541,7 +541,7 @@ K(A, '<C-S-g>',  E .. ':Telescope git_commits<CR>', oq)         -- Log
 K(A, '<M-C-S-D-F8>',  E .. ':Telescope git_status<CR>', oq)     -- Status
 
 K(A, '<M-z>', X.DiffviewToggle, oq)                             -- Diff all
-K(A, "<M-Space>", E .. ':Gitsigns preview_hunk_inline<CR>', oq) -- Diff hunk (inline)
+K(A, '<C-Space>', E .. ':Gitsigns preview_hunk_inline<CR>', oq) -- Diff hunk (inline)
 
 -- Move around
 K(A, "<M-,>", E .. ':Gitsigns next_hunk<CR>', oq)               -- Next hunk
