@@ -1,13 +1,10 @@
 # SEL
-My lifelong quest to achieve computing nirvana and become one with the machine.
+The dream: a fun, fast, simple, consistent x-platform computing environment with fully automated deployment.
 
-The dream: a portable cross-platform computing environment with fully automated deployment.
-
-**Contents**
 <!-- MarkdownTOC -->
 
 - [Modules](#modules)
-- [Apps](#apps)
+- [Software](#software)
 - [Hardware](#hardware)
 
 <!-- /MarkdownTOC -->
@@ -22,7 +19,7 @@ SEL includes the following core modules. Some have grown up and moved into their
 </tr>
 <tr>
     <td align="center">software</td>
-    <td>This repo. Dotfiles being migrated from previously private repo.</td>
+    <td>This repo. Dotfiles and configs and such.</td>
 </tr>
 <tr>
     <td align="center">hardware</td>
@@ -33,7 +30,7 @@ SEL includes the following core modules. Some have grown up and moved into their
     <td>Conceptual design specification for how computers/devices should work.</td>
 </tr>
 <tr>
-    <td align="center"><a href="https://github.com/jxcrw/superhci">superhci</a></td>
+    <td align="center"><a href="https://github.com/jxcrw/superhi">superhi</a></td>
     <td>Human-computer interaction and automation superpowers (AutoHotkey).</td>
 </tr>
 <tr>
@@ -53,7 +50,7 @@ SEL includes the following core modules. Some have grown up and moved into their
 </tr> -->
 </table>
 
-## Apps
+## Software
 <table>
 <tr>
     <th align="center">Category</th>
@@ -61,34 +58,39 @@ SEL includes the following core modules. Some have grown up and moved into their
     <th>Notes</th>
 </tr>
 <tr>
-    <td align="center">File Manager</td>
-    <td align="center"></td>
-    <td></td>
-</tr>
-<tr>
-    <td align="center">Terminal</td>
-    <td align="center">Windows Terminal</td>
-    <td>Best option on Windows.</td>
-</tr>
-<tr>
     <td align="center">Shell</td>
     <td align="center"></td>
     <td></td>
 </tr>
 <tr>
-    <td align="center">Editor</td>
-    <td align="center">Sublime Text</td>
-    <td>Choice for 10+ years. Keeping an eye on Neovim.</td>
+    <td align="center">Terminal</td>
+    <td align="center">wt / kitty</td>
+    <td>Windows Terminal best option on Windows by far. Watching Warp.</td>
 </tr>
 <tr>
-    <td align="center">IDE</td>
-    <td align="center">IntelliJ IDEA</td>
-    <td>Best option for current workflow, but unsatisfying.</td>
+    <td align="center">Editor/IDE</td>
+    <td align="center">neovim</td>
+    <td>Home at long last, after 10+ years of Sublime/IntelliJ. Watching Helix.</td>
 </tr>
 <tr>
     <td align="center">Browser</td>
-    <td align="center">Vivaldi</td>
-    <td>Privacy-first + configurable. IDE-esque UX.</td>
+    <td align="center">vivaldi</td>
+    <td>Privacy-first + highly configurable. IDE-esque UX.</td>
+</tr>
+<tr>
+    <td align="center">Reader</td>
+    <td align="center">sioyek</td>
+    <td>Highly configurable and so good it hurts.</td>
+</tr>
+<tr>
+    <td align="center">Fileman</td>
+    <td align="center"></td>
+    <td></td>
+</tr>
+<tr>
+    <td align="center">Winman</td>
+    <td align="center"></td>
+    <td></td>
 </tr>
 <tr>
     <td align="center">Email</td>
@@ -97,9 +99,9 @@ SEL includes the following core modules. Some have grown up and moved into their
 </tr>
 </table>
 
-_*Currently Windows-only. Empty means still evaluating options._
+_Empty means still evaluating._
 
 ## Hardware
 <p align="center">
-    <img src="_images/AODesk.jpg" width="1000">
+    <img src="_img/AODesk.jpg" width="1000">
 </p>
