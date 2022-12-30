@@ -1,4 +1,5 @@
 .var/
+.xdg/
 .logs/
 .trash/
 .local/
