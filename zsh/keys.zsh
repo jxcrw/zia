@@ -1,8 +1,6 @@
 #!/usr/bin/env zsh
 # zsh keymap
 
-bindkey -e '^[[H' beginning-of-line
-bindkey -e '^[[F' end-of-line
 
 bindkey -e '^[[2~' overwrite-mode       # Insert
 bindkey -e '^H'    backward-kill-word   # Ctrl+backspace
@@ -38,9 +36,11 @@ for key     kcap   seq        mode     widget (
 
     end     kend   $'\EOF'    deselect  end-of-line
     end2    x      $'\E4~'    deselect  end-of-line
+    end3    x      $'\E[F'    deselect  end-of-line
 
     home    khome  $'\EOH'    deselect  beginning-of-line
     home2   x      $'\E1~'    deselect  beginning-of-line
+    home3   x      $'\E[H'    deselect  beginning-of-line
 
     csleft  x      $'\E[1;6D' select    backward-word
     csright x      $'\E[1;6C' select    forward-word
