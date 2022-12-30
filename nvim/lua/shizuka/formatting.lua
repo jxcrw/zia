@@ -17,6 +17,7 @@ null_ls.setup({
     debug = true,
     sources = {
         null_ls.builtins.formatting.yapf,
+        null_ls.builtins.formatting.isort,
         null_ls.builtins.formatting.stylua,
         null_ls.builtins.formatting.rustfmt,
     },
