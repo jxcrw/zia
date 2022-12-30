@@ -75,7 +75,7 @@
 	untracked = green
 	deleted = red
 	unmerged = red
-	branch = cyan
+	branch = green
 	localBranch = cyan
 	remoteBranch = blue
 
