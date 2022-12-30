@@ -29,6 +29,7 @@ alias count='scc.exe'
 
 alias python='python.exe'
 alias pip='pip3.exe'
+alias pi='ipython.exe'
 alias pipdeptree='pipdeptree.exe'
 alias poetry='poetry.exe'
 alias pytest='pytest.exe'
