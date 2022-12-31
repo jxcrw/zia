@@ -68,6 +68,11 @@ function fish_prompt
     set_color normal
 end
 
+function fish_right_prompt
+    set git_info (python 'C:/~/.sel/fish/functions/git_info.py')
+    echo $git_info
+end
+
 set -U LS_COLOR 'rs=0:di=01;34:ln=01;3:mh=00:fi=40;33:pi=40;33:so=01;35:do=01;35:bd=40;33;cd=40;33;or=40;31;mi=00:su=37;41:sg=30;43:ca=30;41:tw=30:ow=34:st=37;44:ex=01;37'
 
 
