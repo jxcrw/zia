@@ -1,0 +1,38 @@
+# Starship Prompt Config
+
+format = '$directory[>](purple) '
+right_format = '$git_state$git_status$git_branch'
+add_newline = false
+
+
+[directory]
+truncate_to_repo = false
+truncation_length = 2
+truncation_symbol = '~/../'
+style = 'cyan'
+
+
+[sudo]
+disabled = true
+format = '💀 '
+
+
+[git_state]
+format = '$state '
+rebase = '🌸'
+bisect = '💀'
+merge = '⚡'
+
+
+[git_status]
+windows_starship = 'starship.exe'
+format = '$staged$modified$untracked$ahead$behind'
+staged = '[$count](cyan) '
+modified = '[$count](yellow) '
+untracked = '[$count](green) '
+ahead = '[$count](blue) '
+behind = '[$count](red) '
+
+
+[git_branch]
+format = '[$branch](black)'
