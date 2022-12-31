@@ -1,0 +1,40 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR EDITOR:nano
+SETUVAR LS_COLOR:rs\x3d0\x3adi\x3d01\x3b34\x3aln\x3d01\x3b3\x3amh\x3d00\x3afi\x3d40\x3b33\x3api\x3d40\x3b33\x3aso\x3d01\x3b35\x3ado\x3d01\x3b35\x3abd\x3d40\x3b33\x3bcd\x3d40\x3b33\x3bor\x3d40\x3b31\x3bmi\x3d00\x3asu\x3d37\x3b41\x3asg\x3d30\x3b43\x3aca\x3d30\x3b41\x3atw\x3d30\x3aow\x3d34\x3ast\x3d37\x3b44\x3aex\x3d01\x3b37
+SETUVAR --export LS_COLORS:rs\x3d0\x3adi\x3d01\x3b34\x3aln\x3d01\x3b36\x3amh\x3d00\x3afi\x3d40\x3b33\x3api\x3d40\x3b33\x3aso\x3d01\x3b35\x3ado\x3d01\x3b35\x3abd\x3d40\x3b33\x3bcd\x3d40\x3b33\x3bor\x3d40\x3b31\x3bmi\x3d00\x3asu\x3d37\x3b41\x3asg\x3d30\x3b43\x3aca\x3d30\x3b41\x3atw\x3d30\x3aow\x3d34\x3ast\x3d37\x3b44\x3aex\x3d01\x3b37
+SETUVAR WINHOME:C\x3a/\x7e
+SETUVAR XDG_CACHE_HOME:/mnt/c/\x7e/\x2esel/\x2exdg/cache
+SETUVAR XDG_CONFIG_HOME:/mnt/c/\x7e/\x2esel
+SETUVAR XDG_DATA_HOME:/mnt/c/\x7e/\x2esel/\x2exdg/data
+SETUVAR XDG_STATE_HOME:/mnt/c/\x7e/\x2esel/\x2exdg/state
+SETUVAR __fish_initialized:3400
+SETUVAR fish_color_autosuggestion:black
+SETUVAR fish_color_cancel:\x2dr
+SETUVAR fish_color_command:cyan
+SETUVAR fish_color_comment:red
+SETUVAR fish_color_cwd:cyan
+SETUVAR fish_color_cwd_root:red
+SETUVAR fish_color_end:green
+SETUVAR fish_color_error:brred
+SETUVAR fish_color_escape:brcyan
+SETUVAR fish_color_history_current:\x2d\x2dbold
+SETUVAR fish_color_host:magenta
+SETUVAR fish_color_host_remote:yellow
+SETUVAR fish_color_normal:normal
+SETUVAR fish_color_operator:yellow
+SETUVAR fish_color_param:yellow
+SETUVAR fish_color_quote:green
+SETUVAR fish_color_redirection:red
+SETUVAR fish_color_search_match:\x2d\x2dbackground\x3d111
+SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_color_status:red
+SETUVAR fish_color_user:brgreen
+SETUVAR fish_color_valid_path:\x1d
+SETUVAR fish_greeting:\x1d
+SETUVAR fish_key_bindings:fish_default_key_bindings
+SETUVAR fish_pager_color_completion:normal
+SETUVAR fish_pager_color_description:B3A06D\x1eyellow\x1e\x2di
+SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
+SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_pager_color_selected_background:\x2dr
