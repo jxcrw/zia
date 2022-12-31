@@ -61,9 +61,9 @@ function git_info() {
   [[ ${#FLAGS[@]} -ne 0 ]] || [[ ${#DIVERGENCES[@]} -ne 0 ]] && GIT_INFO=( "$PREFIX${(j::)FLAGS}${(j::)DIVERGENCES}$SUFFIX" )
   [[ ${#FLAGS[@]} -ne 0 ]] && [[ ${#DIVERGENCES[@]} -ne 0 ]] && GIT_INFO=( "$PREFIX${(j::)FLAGS}${(j::)DIVERGENCES}$SUFFIX" )
   if [ "$GIT_TAGS" != "" ]; then
-    GIT_INFO+=( " %{$fg[black]%}($GIT_LOCATION)<$GIT_TAGS>" )
+    GIT_INFO+=( " %{$fg[black]%}$GIT_LOCATION<$GIT_TAGS>" )
   else
-    GIT_INFO+=( " %{$fg[black]%}($GIT_LOCATION)" )
+    GIT_INFO+=( " %{$fg[black]%}$GIT_LOCATION" )
   fi
   echo "${(j::)GIT_INFO}"
 }
