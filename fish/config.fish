@@ -1,12 +1,15 @@
 #!/usr/bin/env fish
-# Jak Crow 2022-∞ 💗
+# Jak Crow 2022 - ∞ 💗
 
-set -g fish_term24bit 1
 set -U fish_greeting
+set -g fish_term24bit 1
 set -U EDITOR nano
 set -U WINHOME 'C:/~'
 
 set -U fish_color_selection --background='304B4F'
+
+# TODO: Have fisher install plugins into dedicated folders, then source folders (better organization)
+# set fish_function_path ~/.sel/fish/functions/*/ $fish_function_path
 
 
 # General
@@ -20,7 +23,7 @@ alias remove='rm -rf'
 alias file='touch'
 alias folder='mkdir'
 alias directory='echo $PWD'
-alias directories='dirs -v'
+alias directories='dirh'
 alias stats='df -h && echo && free -g' # ROM and RAM usage (GB)
 alias dist='cat /etc/*-release'
 alias update='sudo apt update && sudo apt full-upgrade -y'
@@ -73,6 +76,7 @@ function fish_prompt
 end
 
 function fish_right_prompt
+    # TODO: Make this fast, see tide (https://github.com/IlanCosman/tide) and gitstatus (https://github.com/romkatv/gitstatus)
     set git_info (python 'C:/~/.sel/fish/functions/git_info.py')
     echo $git_info
 end
@@ -89,14 +93,6 @@ set -U LS_COLOR 'rs=0:di=01;34:ln=01;3:mh=00:fi=40;33:pi=40;33:so=01;35:do=01;35
 function print_pizza
     echo "pizza"
 end
-
-function fish_user_key_bindings
-    bind \e\[3\;8~ print_pizza
-    bind \b backward-kill-word
-    bind \cU kill-whole-line
-    bind \cY redo
-end
-
 
 function profile
     for x in (seq 3)
@@ -167,4 +163,17 @@ if functions --query _natural_selection
     set --local escaped (string escape -- $character)
     bind $character "_natural_selection --is-character -- $escaped"
   end
+end
+
+function fish_user_key_bindings
+    bind \e\[3\;8~ 'echo -n (clear | string replace \e\[3J ""); commandline -f repaint'
+    bind \b backward-kill-word
+    bind \cU kill-whole-line
+    bind \cY redo
+
+    # Filesystem navigation
+    # bind \e\[1\;5A prevd-or-backward-word # TODO: Do cd .. (up) in place like prevd/nextd
+    bind \e\[1\;5D prevd-or-backward-word
+    bind \e\[1\;5B prevd-or-backward-word
+    bind \e\[1\;5C nextd-or-forward-word
 end
