@@ -17,6 +17,10 @@ temp/
 temp_*/
 temp_*.*
 temp.*
+tmp/
+tmp_*/
+tmp_*.*
+tmp.*
 scratch/
 *scratch*
 scratch.*
