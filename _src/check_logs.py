@@ -15,10 +15,10 @@ import sys
 # │ Setup
 # └─────────────────────────────────────────────────────────────────────────────
 computer = os.environ['COMPUTERNAME']
-log_dir = r'C:\~\.sel\.logs'
+log_dir = r'C:\~\.zia\.logs'
 os.chdir(log_dir)
 
-with open(r'C:\~\.sel\secrets.json', 'r', encoding='utf-8') as f:
+with open(r'C:\~\.zia\secrets.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 gmail_user = data['gmail_user']
 gmail_password = data['gmail_password']

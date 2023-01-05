@@ -9,12 +9,12 @@ set -U WINHOME 'C:/~'
 set -U fish_color_selection --background='304B4F'
 
 # TODO: Have fisher install plugins into dedicated folders, then source folders (better organization)
-# set fish_function_path ~/.sel/fish/functions/*/ $fish_function_path
+# set fish_function_path ~/.zia/fish/functions/*/ $fish_function_path
 
 
 # General
 alias home='cd ~'
-alias sel='cd ~/.sel'
+alias zia='cd ~/.zia'
 alias u='cd ..'
 alias ls='LC_COLLATE=C command ls -NA --color --group-directories-first'
 alias copy='cp'
@@ -59,11 +59,11 @@ alias kopia='kopia.exe'
 
 # Misc
 alias matrix='cmatrix -u 15 -s'
-alias fgit='zsh "$HOME/.sel/_src/fgit.zsh"'
-alias rename='python "$WINHOME/.sel/_src/rename.py"'
+alias fgit='zsh "$HOME/.zia/_src/fgit.zsh"'
+alias rename='python "$WINHOME/.zia/_src/rename.py"'
 alias Chinese='python "$WINHOME/lang/zh/Chinese Grammar Wiki/study.py"'
 
-# robocopy() { robocopy.exe "$1" "$2" /mir /MT:14 /unilog:"C:/~/.sel/.var/robocopy.log" }
+# robocopy() { robocopy.exe "$1" "$2" /mir /MT:14 /unilog:"C:/~/.zia/.var/robocopy.log" }
 
 function fish_title
     echo (prompt_pwd -d 0)
@@ -103,7 +103,7 @@ end
 
 function fish_right_prompt
     # TODO: Make this fast, see tide (https://github.com/IlanCosman/tide) and gitstatus (https://github.com/romkatv/gitstatus)
-    set git_info (python 'C:/~/.sel/fish/functions/git_info.py')
+    set git_info (python 'C:/~/.zia/fish/functions/git_info.py')
     echo $git_info
 end
 

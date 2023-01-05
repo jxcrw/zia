@@ -21,7 +21,7 @@ local function echo_path(node)
 end
 
 local function hard_delete(node)
-   local trash = 'C:\\~\\.sel\\.trash\\'
+   local trash = 'C:\\~\\.zia\\.trash\\'
    local datetime = os.time()
    local destination = trash .. datetime .. '_' .. node.name
    os.rename(node.absolute_path, destination)

@@ -6,7 +6,7 @@ import os
 from subprocess import PIPE, Popen
 import time
 
-CACHE_FILE = r'C:\~\.sel\.var\fastscan.json'
+CACHE_FILE = r'C:\~\.zia\.var\fastscan.json'
 TEMP_FILE = r'C:\Users\jak\Dropbox\fastscan_temp.txt'
 PULL_FILE = r'C:\Users\jak\Dropbox\fastscan_pull.txt'
 

@@ -50,18 +50,18 @@ alias kopia='kopia.exe'
 
 # Dotfile VC (https://www.ackama.com/what-we-think/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained/)
 # TODO: sel scan command to pick up directories of dotfiles that can change
-alias sel='git.exe --git-dir=C:/~/.sel/.git --work-tree=C:/'
+alias sel='git.exe --git-dir=C:/~/.zia/.git --work-tree=C:/'
 selall() { sel commit -am "$1" }
 
 # Other
-alias fgit='zsh "$HOME/.sel/_src/fgit.zsh"'
+alias fgit='zsh "$HOME/.zia/_src/fgit.zsh"'
 
 # Misc
 alias Chinese='python "$HOME/langs/zh/Chinese Grammar Wiki/study.py"'
 alias matrix='cmatrix -u 15 -s'
-alias rename='python "$WINHOME/.sel/_src/rename.py"'
+alias rename='python "$WINHOME/.zia/_src/rename.py"'
 
-robocopy() { robocopy.exe "$1" "$2" /mir /MT:14 /unilog:"C:/~/.sel/.var/robocopy.log" }
+robocopy() { robocopy.exe "$1" "$2" /mir /MT:14 /unilog:"C:/~/.zia/.var/robocopy.log" }
 
 # ┌─────────────────────────────────────────────────────────────────────────────
 # │ Zsh General
@@ -106,7 +106,7 @@ profile() {
 alias o='open'
 open() {
   # Fuzzy-find and open files
-  target_file="$( cat /mnt/c/~/.sel/.var/fd.log | fzf )"
+  target_file="$( cat /mnt/c/~/.zia/.var/fd.log | fzf )"
 
   if [[ $1 == "aslauncher" ]] then
     AutoHotkey.exe 'C:\~\dev\superhi\fzf_open.ahk' 'end'
@@ -184,18 +184,18 @@ bye() { freeze ; push all ; rundll32.exe powrprof.dll, SetSuspendState Sleep}
 push() {
   # Sync files to remote
   n_args=$#
-  log_file='C:\~\.sel\.logs\rclone_push.log'
-  exclude_file='C:\~\.sel\_env\rclone_exclude.txt'
+  log_file='C:\~\.zia\.logs\rclone_push.log'
+  exclude_file='C:\~\.zia\_env\rclone_exclude.txt'
 
   if [[ $n_args -eq 0 ]] then
-    python "C:\~\.sel\_src\fastscan.py"
+    python "C:\~\.zia\_src\fastscan.py"
     echo "push fast..."
     rclone copy "C:/" "GD:/" --progress --no-traverse --files-from $fastscan_temp --copy-links
 
   elif [[ $1 == "all" ]] then
-    python "C:\~\.sel\_src\fastscan.py"
+    python "C:\~\.zia\_src\fastscan.py"
     echo "kopia snapshot..."
-    kopia.exe snapshot create --all --log-level=warning --no-progress >> /mnt/c/~/.sel/.logs/kopia.log 2>&1
+    kopia.exe snapshot create --all --log-level=warning --no-progress >> /mnt/c/~/.zia/.logs/kopia.log 2>&1
     echo "push all..."
     rclone sync "C:\~" "GD:\~" --fast-list --progress --drive-skip-gdocs --exclude-from=$exclude_file --log-file=$log_file --copy-links
 
@@ -211,7 +211,7 @@ push() {
 pull() {
   # Sync files from remote
   n_args=$#
-  log_file='C:\~\.sel\.logs\rclone_pull.log'
+  log_file='C:\~\.zia\.logs\rclone_pull.log'
 
   if [[ $n_args -eq 0 ]] then
     echo "pull fast..."
@@ -237,9 +237,9 @@ pull() {
 freeze() {
   # Freeze current environment (apps/packages/envars/etc.)
   echo -n $fg[cyan]
-  echo -n freezing scoop... ; scoop export > '/mnt/c/~/.sel/_env/scoop.json'
-  echo -n python... ; pipdeptree > '/mnt/c/~/.sel/_env/python.txt'
-  echo -n envars... ; reg.exe export 'HKEY_CURRENT_USER\Environment' 'C:\~\.sel\_env\envars.reg' /y > /dev/null
+  echo -n freezing scoop... ; scoop export > '/mnt/c/~/.zia/_env/scoop.json'
+  echo -n python... ; pipdeptree > '/mnt/c/~/.zia/_env/python.txt'
+  echo -n envars... ; reg.exe export 'HKEY_CURRENT_USER\Environment' 'C:\~\.zia\_env\envars.reg' /y > /dev/null
   echo "done\n"$reset_color
   # freeze file associations
   # freeze non-scoop apps
@@ -248,8 +248,8 @@ freeze() {
 thaw() {
   # Thaw frozen environment (packages/envars/etc.)
   echo "thawing..."
-  scoop import "C:\~\.sel\_env\scoop.json"
-  pip install -r 'C:\~\.sel\_env\python.txt' --upgrade
-  reg.exe import 'C:\~\.sel\_env\envars.reg'
+  scoop import "C:\~\.zia\_env\scoop.json"
+  pip install -r 'C:\~\.zia\_env\python.txt' --upgrade
+  reg.exe import 'C:\~\.zia\_env\envars.reg'
   # everything opposite of freeze :)
 }

@@ -1,5 +1,5 @@
 # Crontab on WSL: https://www.howtogeek.com/746532/how-to-launch-cron-automatically-in-wsl-on-windows-10-and-11/
-# Reload this file: 'crontab /mnt/c/~/.sel/cron.tab'
+# Reload this file: 'crontab /mnt/c/~/.zia/cron.tab'
 # To set PATH: 'env > my_env', copy PATH and SHELL vars into here
 MAIL=""
 SHELL=/usr/bin/zsh
@@ -7,18 +7,18 @@ PATH=PATH=/mnt/c/~/.local/bin:/mnt/c/~/.poetry/bin:/usr/local/sbin:/usr/local/bi
 DATEVAR=($date)
 
 # fd
-* * * * * fd.exe --absolute-path --hidden --exclude .git --type file . "C:\~" "C:\scoop" "C:\Users\jak\AppData" > '/mnt/c/~/.sel/.var/fd.log'
+* * * * * fd.exe --absolute-path --hidden --exclude .git --type file . "C:\~" "C:\scoop" "C:\Users\jak\AppData" > '/mnt/c/~/.zia/.var/fd.log'
 
 # Scoop
-*/15 * * * * scoop update > /dev/null 2>> /mnt/c/~/.sel/.logs/scoop.log
+*/15 * * * * scoop update > /dev/null 2>> /mnt/c/~/.zia/.logs/scoop.log
 
 # Kopia
-0 * * * * kopia.exe snapshot create --all --log-level=warning --no-progress >> /mnt/c/~/.sel/.logs/kopia.log 2>&1
-30 * * * * kopia.exe content verify --log-level=warning >> /mnt/c/~/.sel/.logs/kopia.log 2>&1
-0 21 * * SAT kopia.exe content verify >> /mnt/c/~/.sel/.logs/kopia.log 2>&1
+0 * * * * kopia.exe snapshot create --all --log-level=warning --no-progress >> /mnt/c/~/.zia/.logs/kopia.log 2>&1
+30 * * * * kopia.exe content verify --log-level=warning >> /mnt/c/~/.zia/.logs/kopia.log 2>&1
+0 21 * * SAT kopia.exe content verify >> /mnt/c/~/.zia/.logs/kopia.log 2>&1
 
 # Log Checker
-30 21 * * * python.exe "C:\~\.sel\_src\check_logs.py" 2>> /mnt/c/~/.sel/.logs/check_logs.log
+30 21 * * * python.exe "C:\~\.zia\_src\check_logs.py" 2>> /mnt/c/~/.zia/.logs/check_logs.log
 
 # Delete silly files
 */15 * * * * rm .sudo_as_admin_successful

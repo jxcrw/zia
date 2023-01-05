@@ -8,7 +8,7 @@ APPDATA="/mnt/c/Users/jak/AppData"
 bamboozle() {
   # Reroute installs to keep $HOME squeaky clean.
   SAVE=$HOME
-  export HOME="$HOME/.sel"
+  export HOME="$HOME/.zia"
   eval "($1)"
   export HOME=$SAVE
 }
@@ -25,12 +25,12 @@ ln ../windows-terminal/settings.json $APPDATA"/Local/Microsoft/Windows Terminal/
 
 # Install binaries
 echo installing binaries...
-$HOME/.sel/fzf/install --bin
+$HOME/.zia/fzf/install --bin
 bamboozle zoxide/install.sh
 
 
 # TODO
-# Add to /etc/zshenv: ZDOTDIR=~/.sel/zsh
+# Add to /etc/zshenv: ZDOTDIR=~/.zia/zsh
 # Set up sudoers file to start cron without password
 # Directory junction sublime-text-dev
 

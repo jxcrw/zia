@@ -36,12 +36,12 @@ fish
 # WORDCHARS='-:_*?.[]~=&;!#$%^(){}<>'
 
 # export WINHOME='C:/~'
-# # export PATH="$PATH:$HOME/.sel/.local/bin:$HOME/.local/bin"
+# # export PATH="$PATH:$HOME/.zia/.local/bin:$HOME/.local/bin"
 
-# export XDG_CONFIG_HOME="$HOME/.sel"
-# export XDG_DATA_HOME="$HOME/.sel/.xdg/data"
-# export XDG_STATE_HOME="$HOME/.sel/.xdg/state"
-# export XDG_CACHE_HOME="$HOME/.sel/.xdg/cache"
+# export XDG_CONFIG_HOME="$HOME/.zia"
+# export XDG_DATA_HOME="$HOME/.zia/.xdg/data"
+# export XDG_STATE_HOME="$HOME/.zia/.xdg/state"
+# export XDG_CACHE_HOME="$HOME/.zia/.xdg/cache"
 
 # export EDITOR=nano
 

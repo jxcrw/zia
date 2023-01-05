@@ -7,13 +7,13 @@
 [core]
 	# editor = subl --wait --new-window
 	editor = neovide.exe --multigrid --nofork
-	excludesfile = "C:\\~\\.sel\\git\\.gitignore_global"
+	excludesfile = "C:\\~\\.zia\\git\\.gitignore_global"
 	autocrlf = input
 	eol = lf
 	quotePath = false
 	ignorecase = false
 [mailmap]
-	file = "C:\\~\\.sel\\git\\mailmap"
+	file = "C:\\~\\.zia\\git\\mailmap"
 [init]
 	defaultBranch = main
 [commit]

@@ -17,7 +17,7 @@ vim.cmd [[
 new
 setlocal buftype=nofile bufhidden=hide noswapfile nobuflisted
 let evars = environ()
-" let file = 'C:/~/.sel/nvim/vars.txt'
+" let file = 'C:/~/.zia/nvim/vars.txt'
 for var in evars->keys()->sort()
     " echo var . '=' . evars[var]
     put=var . '=' . evars[var]

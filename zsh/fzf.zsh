@@ -1,15 +1,15 @@
 # Set up fzf
 fd='fd.exe'
 
-# if [[ ! "$PATH" == */mnt/c/~/.sel/fzf/bin* ]]; then
-#   PATH="${PATH:+${PATH}:}/mnt/c/~/.sel/fzf/bin"
+# if [[ ! "$PATH" == */mnt/c/~/.zia/fzf/bin* ]]; then
+#   PATH="${PATH:+${PATH}:}/mnt/c/~/.zia/fzf/bin"
 # fi
 
 # Auto-completion
-[[ $- == *i* ]] && source "/mnt/c/~/.sel/fzf/shell/completion.zsh" 2> /dev/null
+[[ $- == *i* ]] && source "/mnt/c/~/.zia/fzf/shell/completion.zsh" 2> /dev/null
 
 # Key bindings
-source "/mnt/c/~/.sel/zsh/fzf-keys.zsh"
+source "/mnt/c/~/.zia/zsh/fzf-keys.zsh"
 
 # Customization
 colors=' --color=fg:#565f89,bg:-1,preview-fg:-1,preview-bg:-1,hl:#73daca,fg+:#c0caf5,bg+:-1,gutter:-1,query:#c0caf5,hl+:#73daca,info:#565f89,border:-1,prompt:#F7B273,pointer:#F7B273,marker:#F7B273,spinner:#565f89,header:#565f89'

@@ -235,7 +235,7 @@ function M.run()
    local sf = vim.fn.expand('%:t')
    local ft = vim.bo.filetype
    local bin = nil
-   local trash = 'C:\\~\\.sel\\.trash\\'
+   local trash = 'C:\\~\\.zia\\.trash\\'
    local command = ':write | 13split | terminal %s "%s"'
 
    if ft == 'python' then
