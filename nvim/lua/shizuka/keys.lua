@@ -151,11 +151,11 @@ K(I, '<End>', O .. 'g$', oq)
 -- General Navigation
 K(N, '<C-Left>', 'B', oq)                                -- Prev word
 K(V, '<C-Left>', E .. 'B', oq)                           -- Prev word
-K(I, '<C-Left>' , O .. 'b', oq)                          -- Prev word
+-- K(I, '<C-Left>' , E .. 'b', oq)                          -- Prev word
 K(C, '<C-Left>' , '<C-f>bb<C-c>', oq)                    -- Prev word
 K(N, '<C-Right>', 'E', oq)                               -- Next word
 K(V, '<C-Right>', E .. 'E', oq)                          -- Next word
-K(I, '<C-Right>' , O .. 'e<C-o>a', oq)                   -- Next word
+-- K(I, '<C-Right>' , E .. 'e<C-o>a', oq)                   -- Next word
 K(C, '<C-Right>' , '<S-Right>', oq)                      -- Next word
 K(A, '<C-Up>', E .. '<Up>{<Down>^', oq)                  -- Prev block
 K(I, '<C-Up>', O .. '<Up><C-o>{<C-o><Down><C-o>^', oq)   -- Prev block
