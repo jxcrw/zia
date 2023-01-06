@@ -418,6 +418,7 @@ K(V, '"', '"0xi""<Esc>"0P', oq)
 K(V, ' "', '"0xi""<Esc>"0P', oq)
 K(V, '`', '"0xi``<Esc>"0P', oq)
 K(V, ' `', '"0xi``<Esc>"0P', oq)
+K(V, '<C-M-F7>', '"0xi<u></u><Left><Left><Left><Esc>"0P', oq)
 
 -- Alignment
 K(NV, '=' , ':Tabularize /', o)           -- Align on specified char
