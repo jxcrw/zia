@@ -15,6 +15,7 @@ set -U fish_color_selection --background='304B4F'
 # General
 alias home='cd ~'
 alias zia='cd ~/.zia'
+alias crow='cd ~/arc/crow'
 alias u='cd ..'
 alias ls='LC_COLLATE=C command ls -NA --color --group-directories-first'
 alias copy='cp'
