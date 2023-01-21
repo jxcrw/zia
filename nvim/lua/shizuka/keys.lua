@@ -402,6 +402,7 @@ K(I, '<M-C-D-F7>', '<C-d>', oq) -- Dedent
 K(A, '<M-BS>', ':g/^$/d<CR>:%s/ //g<CR>', oq) -- Delete excess whitespace/newlines
 K(NV, 'for', ':g/ <BS>', o)                   -- General-purpose line operation
 K(V, '.', ":'<,'>normal.<CR>")                -- Repeat last action over range
+K(V, '@', ":'<,'>normal@a<CR>")               -- Repeat 'a' macro over range
 
 -- Surround Stuff with Stuff
 K(V, '(', '"0xi()<Esc>"0P', oq)
