@@ -58,493 +58,493 @@
     "apps": [
         {
             "Version": "22.01",
-            "Info": "",
             "Name": "7zip",
+            "Updated": "2022-11-01T05:05:28.0543358-07:00",
             "Source": "main",
-            "Updated": "2022-11-01T05:05:28.0543358-07:00"
+            "Info": ""
         },
         {
             "Version": "33.0.3",
-            "Info": "",
             "Name": "adb",
+            "Updated": "2022-11-01T05:09:07.6406856-07:00",
             "Source": "main",
-            "Updated": "2022-11-01T05:09:07.6406856-07:00"
+            "Info": ""
         },
         {
             "Version": "22.003.20282",
-            "Info": "",
             "Name": "AdobeAcrobatReader-Install",
+            "Updated": "2022-12-27T12:14:25.3083599-08:00",
             "Source": "ACooper81_scoop-apps",
-            "Updated": "2022-12-27T12:14:25.3083599-08:00"
+            "Info": ""
         },
         {
             "Version": "4333796",
-            "Info": "",
             "Name": "android-sdk",
+            "Updated": "2022-11-01T05:09:37.2777705-07:00",
             "Source": "extras",
-            "Updated": "2022-11-01T05:09:37.2777705-07:00"
+            "Info": ""
         },
         {
             "Version": "2021.3.1.17",
-            "Info": "",
             "Name": "android-studio",
+            "Updated": "2022-11-01T05:10:50.1529026-07:00",
             "Source": "extras",
-            "Updated": "2022-11-01T05:10:50.1529026-07:00"
+            "Info": ""
         },
         {
             "Version": "2.1.55",
-            "Info": "",
             "Name": "anki",
+            "Updated": "2022-12-30T16:17:15.3964429-08:00",
             "Source": "extras",
-            "Updated": "2022-12-30T16:17:15.3964429-08:00"
+            "Info": ""
         },
         {
             "Version": "22.10.16.0",
-            "Info": "",
             "Name": "archwsl",
+            "Updated": "2022-12-19T17:20:23.8208713-08:00",
             "Source": "extras",
-            "Updated": "2022-12-19T17:20:23.8208713-08:00"
+            "Info": ""
         },
         {
             "Version": "1.1.36.02",
-            "Info": "",
             "Name": "autohotkey1.1",
+            "Updated": "2022-12-27T11:21:43.4877288-08:00",
             "Source": "versions",
-            "Updated": "2022-12-27T11:21:43.4877288-08:00"
+            "Info": ""
         },
         {
             "Version": "6.10.0",
-            "Info": "",
             "Name": "calibre",
+            "Updated": "2022-12-27T12:15:31.8985628-08:00",
             "Source": "extras",
-            "Updated": "2022-12-27T12:15:31.8985628-08:00"
+            "Info": ""
         },
         {
             "Version": "3.25.1",
-            "Info": "",
             "Name": "cmake",
+            "Updated": "2022-12-27T12:15:44.9895063-08:00",
             "Source": "main",
-            "Updated": "2022-12-27T12:15:44.9895063-08:00"
+            "Info": ""
         },
         {
             "Version": "0.6.4",
-            "Info": "",
             "Name": "code-minimap",
+            "Updated": "2022-11-22T16:11:38.6678671-08:00",
             "Source": "extras",
-            "Updated": "2022-11-22T16:11:38.6678671-08:00"
+            "Info": ""
         },
         {
             "Version": "2.03",
-            "Info": "",
             "Name": "cpu-z",
+            "Updated": "2022-11-01T05:11:46.7044981-07:00",
             "Source": "extras",
-            "Updated": "2022-11-01T05:11:46.7044981-07:00"
+            "Info": ""
         },
         {
             "Version": "8.17.13",
-            "Info": "",
             "Name": "crystaldiskinfo",
+            "Updated": "2022-12-27T12:15:48.4825739-08:00",
             "Source": "extras",
-            "Updated": "2022-12-27T12:15:48.4825739-08:00"
+            "Info": ""
         },
         {
             "Version": "8.0.4c",
-            "Info": "",
             "Name": "crystaldiskmark",
+            "Updated": "2022-11-01T05:11:51.1186261-07:00",
             "Source": "extras",
-            "Updated": "2022-11-01T05:11:51.1186261-07:00"
+            "Info": ""
         },
         {
             "Version": "3.11.2",
-            "Info": "",
             "Name": "dark",
+            "Updated": "2022-11-01T05:11:51.8027553-07:00",
             "Source": "main",
-            "Updated": "2022-11-01T05:11:51.8027553-07:00"
+            "Info": ""
         },
         {
             "Version": "20.7.4",
-            "Info": "",
             "Name": "draw.io",
+            "Updated": "2022-12-27T12:16:03.8919603-08:00",
             "Source": "extras",
-            "Updated": "2022-12-27T12:16:03.8919603-08:00"
+            "Info": ""
         },
         {
             "Version": "nightly-20221219",
-            "Info": "",
             "Name": "dropbox-np",
+            "Updated": "2022-12-19T17:07:19.9677217-08:00",
             "Source": "nonportable",
-            "Updated": "2022-12-19T17:07:19.9677217-08:00"
+            "Info": ""
         },
         {
             "Version": "2.19.0",
-            "Info": "",
             "Name": "dua",
+            "Updated": "2022-12-13T21:54:11.3747244-08:00",
             "Source": "main",
-            "Updated": "2022-12-13T21:54:11.3747244-08:00"
+            "Info": ""
         },
         {
             "Version": "8.6.0",
-            "Info": "",
             "Name": "fd",
+            "Updated": "2022-12-27T12:16:05.0828422-08:00",
             "Source": "main",
-            "Updated": "2022-12-27T12:16:05.0828422-08:00"
+            "Info": ""
         },
         {
             "Version": "4.120",
-            "Info": "",
             "Name": "flux",
+            "Updated": "2022-11-01T05:12:55.9656562-07:00",
             "Source": "extras",
-            "Updated": "2022-11-01T05:12:55.9656562-07:00"
+            "Info": ""
         },
         {
             "Version": "0.35.1",
-            "Info": "",
             "Name": "fzf",
+            "Updated": "2022-11-21T22:38:39.7311721-08:00",
             "Source": "main",
-            "Updated": "2022-11-21T22:38:39.7311721-08:00"
+            "Info": ""
         },
         {
             "Version": "11.2.0",
-            "Info": "",
             "Name": "gcc",
+            "Updated": "2022-11-24T09:37:43.3668903-08:00",
             "Source": "main",
-            "Updated": "2022-11-24T09:37:43.3668903-08:00"
+            "Info": ""
         },
         {
             "Version": "2.39.0.windows.2",
-            "Info": "",
             "Name": "git",
+            "Updated": "2022-12-27T19:22:08.3779815-08:00",
             "Source": "main",
-            "Updated": "2022-12-27T19:22:08.3779815-08:00"
+            "Info": ""
         },
         {
             "Version": "22.12",
-            "Info": "",
             "Name": "helix",
+            "Updated": "2022-12-29T22:19:20.3697574-08:00",
             "Source": "main",
-            "Updated": "2022-12-29T22:19:20.3697574-08:00"
+            "Info": ""
         },
         {
             "Version": "0.109.0",
-            "Info": "",
             "Name": "hugo-extended",
+            "Updated": "2022-12-27T12:16:18.6621883-08:00",
             "Source": "main",
-            "Updated": "2022-12-27T12:16:18.6621883-08:00"
+            "Info": ""
         },
         {
             "Version": "1.48",
-            "Info": "",
             "Name": "hwmonitor",
+            "Updated": "2022-12-27T12:16:42.2669758-08:00",
             "Source": "extras",
-            "Updated": "2022-12-27T12:16:42.2669758-08:00"
+            "Info": ""
         },
         {
             "Version": "2022.3.1-223.8214.52",
-            "Info": "",
             "Name": "idea",
+            "Updated": "2022-12-27T12:18:20.5088788-08:00",
             "Source": "extras",
-            "Updated": "2022-12-27T12:18:20.5088788-08:00"
+            "Info": ""
         },
         {
             "Version": "1.2.1_2022-07-14",
-            "Info": "",
             "Name": "inkscape",
+            "Updated": "2022-11-01T05:22:04.6248463-07:00",
             "Source": "extras",
-            "Updated": "2022-11-01T05:22:04.6248463-07:00"
+            "Info": ""
         },
         {
             "Version": "0.50",
-            "Info": "",
             "Name": "innounp",
+            "Updated": "2022-11-01T09:56:58.3169501-07:00",
             "Source": "main",
-            "Updated": "2022-11-01T09:56:58.3169501-07:00"
+            "Info": ""
         },
         {
             "Version": "2.52",
-            "Info": "",
             "Name": "keepass",
+            "Updated": "2022-11-01T05:22:06.0008954-07:00",
             "Source": "extras",
-            "Updated": "2022-11-01T05:22:06.0008954-07:00"
+            "Info": ""
         },
         {
             "Version": "2.26",
-            "Info": "",
             "Name": "keypirinha",
+            "Updated": "2022-11-01T05:22:08.7105318-07:00",
             "Source": "extras",
-            "Updated": "2022-11-01T05:22:08.7105318-07:00"
+            "Info": ""
         },
         {
             "Version": "6.0.10",
-            "Info": "",
             "Name": "kicad",
+            "Updated": "2022-12-27T12:23:09.8145452-08:00",
             "Source": "extras",
-            "Updated": "2022-12-27T12:23:09.8145452-08:00"
+            "Info": ""
         },
         {
             "Version": "0.12.1",
-            "Info": "",
             "Name": "kopiaui",
+            "Updated": "2022-11-01T05:26:12.5249498-07:00",
             "Source": "extras",
-            "Updated": "2022-11-01T05:26:12.5249498-07:00"
+            "Info": ""
         },
         {
             "Version": "0.36.0",
-            "Info": "",
             "Name": "lazygit",
+            "Updated": "2022-11-22T17:25:37.274058-08:00",
             "Source": "extras",
-            "Updated": "2022-11-22T17:25:37.274058-08:00"
+            "Info": ""
         },
         {
             "Version": "r28",
-            "Info": "",
             "Name": "lf",
+            "Updated": "2022-12-27T12:23:11.8518495-08:00",
             "Source": "main",
-            "Updated": "2022-12-27T12:23:11.8518495-08:00"
+            "Info": ""
         },
         {
             "Version": "5.4.2",
-            "Info": "",
             "Name": "lua",
+            "Updated": "2022-11-30T09:08:21.1504937-08:00",
             "Source": "main",
-            "Updated": "2022-11-30T09:08:21.1504937-08:00"
+            "Info": ""
         },
         {
             "Version": "3.9.2",
-            "Info": "",
             "Name": "luarocks",
+            "Updated": "2022-12-27T12:23:20.3864246-08:00",
             "Source": "main",
-            "Updated": "2022-12-27T12:23:20.3864246-08:00"
+            "Info": ""
         },
         {
             "Version": "12.2.0-rt_v10-rev1",
-            "Info": "",
             "Name": "mingw",
+            "Updated": "2022-12-27T12:23:52.7383066-08:00",
             "Source": "main",
-            "Updated": "2022-12-27T12:23:52.7383066-08:00"
+            "Info": ""
         },
         {
             "Version": "2022-12-16",
-            "Info": "",
             "Name": "msys2",
+            "Updated": "2022-12-27T15:56:41.4740474-08:00",
             "Source": "main",
-            "Updated": "2022-12-27T15:56:41.4740474-08:00"
+            "Info": ""
         },
         {
             "Version": "0.10.3",
-            "Info": "",
             "Name": "neovide",
+            "Updated": "2022-11-22T22:45:44.0127652-08:00",
             "Source": "extras",
-            "Updated": "2022-11-22T22:45:44.0127652-08:00"
+            "Info": ""
         },
         {
             "Version": "0.9.0-dev-555-g357aab4c6",
-            "Info": "",
             "Name": "neovim-nightly",
+            "Updated": "2022-12-27T12:31:45.238629-08:00",
             "Source": "versions",
-            "Updated": "2022-12-27T12:31:45.238629-08:00"
+            "Info": ""
         },
         {
             "Version": "1.11.1",
-            "Info": "",
             "Name": "ninja",
+            "Updated": "2022-12-27T15:51:40.0360047-08:00",
             "Source": "main",
-            "Updated": "2022-12-27T15:51:40.0360047-08:00"
+            "Info": ""
         },
         {
             "Version": "19.3.0",
-            "Info": "",
             "Name": "nodejs",
+            "Updated": "2022-12-27T12:32:13.2119276-08:00",
             "Source": "main",
-            "Updated": "2022-12-27T12:32:13.2119276-08:00"
+            "Info": ""
         },
         {
             "Version": "8.4.8",
-            "Info": "",
             "Name": "notepadplusplus",
+            "Updated": "2022-12-27T12:33:48.2411422-08:00",
             "Source": "extras",
-            "Updated": "2022-12-27T12:33:48.2411422-08:00"
+            "Info": ""
         },
         {
             "Version": "0.3.4",
-            "Info": "",
             "Name": "ntop",
+            "Updated": "2022-12-25T15:04:09.7193654-08:00",
             "Source": "main",
-            "Updated": "2022-12-25T15:04:09.7193654-08:00"
+            "Info": ""
         },
         {
             "Version": "0.73.0",
-            "Info": "",
             "Name": "nu",
+            "Updated": "2023-01-10T15:45:00.1357376-08:00",
             "Source": "main",
-            "Updated": "2023-01-10T15:45:00.1357376-08:00"
+            "Info": ""
         },
         {
             "Version": "22.08.1",
-            "Info": "",
             "Name": "okular",
+            "Updated": "2022-12-17T07:08:56.9855087-08:00",
             "Source": "extras",
-            "Updated": "2022-12-17T07:08:56.9855087-08:00"
+            "Info": ""
         },
         {
             "Version": "19.0.1-10",
-            "Info": "",
             "Name": "openjdk",
+            "Updated": "2022-11-01T05:26:39.1566409-07:00",
             "Source": "java",
-            "Updated": "2022-11-01T05:26:39.1566409-07:00"
+            "Info": ""
         },
         {
             "Version": "2.19.2",
-            "Info": "",
             "Name": "pandoc",
+            "Updated": "2022-11-01T05:26:41.9628312-07:00",
             "Source": "main",
-            "Updated": "2022-11-01T05:26:41.9628312-07:00"
+            "Info": ""
         },
         {
             "Version": "17.02",
-            "Info": "",
             "Name": "process-explorer",
+            "Updated": "2023-01-04T15:20:14.9568103-08:00",
             "Source": "sysinternals",
-            "Updated": "2023-01-04T15:20:14.9568103-08:00"
+            "Info": ""
         },
         {
             "Version": "3.11.1",
-            "Info": "",
             "Name": "python",
+            "Updated": "2022-12-29T14:24:46.219079-08:00",
             "Source": "main",
-            "Updated": "2022-12-29T14:24:46.219079-08:00"
+            "Info": ""
         },
         {
             "Version": "1.61.1",
-            "Info": "",
             "Name": "rclone",
+            "Updated": "2022-12-27T12:32:42.3161736-08:00",
             "Source": "main",
-            "Updated": "2022-12-27T12:32:42.3161736-08:00"
+            "Info": ""
         },
         {
             "Version": "2.0.3",
-            "Info": "",
             "Name": "ridnacs",
+            "Updated": "2022-11-01T05:27:05.4529143-07:00",
             "Source": "extras",
-            "Updated": "2022-11-01T05:27:05.4529143-07:00"
+            "Info": ""
         },
         {
             "Version": "13.0.0",
-            "Info": "",
             "Name": "ripgrep",
+            "Updated": "2022-11-01T05:27:06.9341406-07:00",
             "Source": "main",
-            "Updated": "2022-11-01T05:27:06.9341406-07:00"
+            "Info": ""
         },
         {
             "Version": "3.21",
-            "Info": "",
             "Name": "rufus",
+            "Updated": "2022-12-27T12:32:44.8233385-08:00",
             "Source": "extras",
-            "Updated": "2022-12-27T12:32:44.8233385-08:00"
+            "Info": ""
         },
         {
             "Version": "2022-12-26",
-            "Info": "",
             "Name": "rust-analyzer",
+            "Updated": "2022-12-27T12:32:46.2191436-08:00",
             "Source": "main",
-            "Updated": "2022-12-27T12:32:46.2191436-08:00"
+            "Info": ""
         },
         {
             "Version": "1.25.1",
-            "Info": "",
             "Name": "rustup",
+            "Updated": "2022-12-15T13:36:22.1518142-08:00",
             "Source": "main",
-            "Updated": "2022-12-15T13:36:22.1518142-08:00"
+            "Info": ""
         },
         {
             "Version": "3.1.0",
-            "Info": "",
             "Name": "scc",
+            "Updated": "2022-11-27T21:46:28.8814823-08:00",
             "Source": "main",
-            "Updated": "2022-11-27T21:46:28.8814823-08:00"
+            "Info": ""
         },
         {
             "Version": "2.0.0",
-            "Info": "",
             "Name": "sioyek",
+            "Updated": "2022-12-23T00:34:12.9192102-08:00",
             "Source": "extras",
-            "Updated": "2022-12-23T00:34:12.9192102-08:00"
+            "Info": ""
         },
         {
             "Version": "1.12.0",
-            "Info": "",
             "Name": "starship",
+            "Updated": "2022-12-30T23:42:16.4562228-08:00",
             "Source": "main",
-            "Updated": "2022-12-30T23:42:16.4562228-08:00"
+            "Info": ""
         },
         {
             "Version": "nightly-20221101",
-            "Info": "",
             "Name": "steam",
+            "Updated": "2022-11-01T05:27:09.2475492-07:00",
             "Source": "versions",
-            "Updated": "2022-11-01T05:27:09.2475492-07:00"
+            "Info": ""
         },
         {
             "Version": "4147",
-            "Info": "",
             "Name": "sublime-text-dev",
+            "Updated": "2022-12-27T12:32:51.6202185-08:00",
             "Source": "jat001_scoop-ox",
-            "Updated": "2022-12-27T12:32:51.6202185-08:00"
+            "Info": ""
         },
         {
             "Version": "0.2020.01.26",
-            "Info": "",
             "Name": "sudo",
+            "Updated": "2023-01-02T01:12:34.5687371-08:00",
             "Source": "main",
-            "Updated": "2023-01-02T01:12:34.5687371-08:00"
+            "Info": ""
         },
         {
             "Version": "8.0.352-8",
-            "Info": "",
             "Name": "temurin8-jdk",
+            "Updated": "2022-12-27T12:33:09.4161462-08:00",
             "Source": "java",
-            "Updated": "2022-12-27T12:33:09.4161462-08:00"
+            "Info": ""
         },
         {
             "Version": "14.34.31931.0",
-            "Info": "",
             "Name": "vcredist2022",
+            "Updated": "2022-11-18T08:20:22.3510527-08:00",
             "Source": "extras",
-            "Updated": "2022-11-18T08:20:22.3510527-08:00"
+            "Info": ""
         },
         {
             "Version": "5.7.2887.3",
-            "Info": "",
             "Name": "vivaldi-snapshot",
+            "Updated": "2022-12-27T12:33:20.9588391-08:00",
             "Source": "versions",
-            "Updated": "2022-12-27T12:33:20.9588391-08:00"
+            "Info": ""
         },
         {
             "Version": "3.0.18",
-            "Info": "",
             "Name": "vlc",
+            "Updated": "2022-12-27T12:33:30.8616677-08:00",
             "Source": "extras",
-            "Updated": "2022-12-27T12:33:30.8616677-08:00"
+            "Info": ""
         },
         {
             "Version": "1.16.2641.0",
-            "Info": "",
             "Name": "windows-terminal-preview",
+            "Updated": "2022-11-01T05:27:57.3883966-07:00",
             "Source": "versions",
-            "Updated": "2022-11-01T05:27:57.3883966-07:00"
+            "Info": ""
         },
         {
             "Version": "0.12.6-1",
-            "Info": "",
             "Name": "wkhtmltopdf",
+            "Updated": "2022-11-01T05:27:59.6192998-07:00",
             "Source": "main",
-            "Updated": "2022-11-01T05:27:59.6192998-07:00"
+            "Info": ""
         },
         {
             "Version": "5.13.0.11216",
-            "Info": "",
             "Name": "zoom",
+            "Updated": "2022-12-27T12:33:40.6546127-08:00",
             "Source": "extras",
-            "Updated": "2022-12-27T12:33:40.6546127-08:00"
+            "Info": ""
         }
     ]
 }
