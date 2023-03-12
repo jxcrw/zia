@@ -143,8 +143,9 @@ pandas==1.5.2
   - python-dateutil [required: >=2.8.1, installed: 2.8.2]
     - six [required: >=1.5, installed: 1.16.0]
   - pytz [required: >=2020.1, installed: 2022.7]
+pdfkit==1.0.0
 pip-autoremove==0.10.0
-  - pip [required: Any, installed: 22.3.1]
+  - pip [required: Any, installed: 23.0.1]
   - setuptools [required: Any, installed: 65.5.0]
 pipdeptree==2.3.3
 py==1.11.0
