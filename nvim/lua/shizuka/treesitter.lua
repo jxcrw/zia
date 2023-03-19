@@ -15,7 +15,7 @@ end
 -- └─────────────────────────────────────────────────────────────────────────────
 -- This initializes treesitter-textobjects too!
 configs.setup({
-   ensure_installed = { 'python', 'lua', 'markdown', 'help', 'norg', 'norg_meta', 'rust' },
+   ensure_installed = { 'rust', 'python', 'lua', 'vim', 'markdown', 'help'},
    sync_install = false,
    ignore_install = { '' }, -- List of parsers to ignore installing
    autopairs = { enable = true },
@@ -30,3 +30,6 @@ configs.setup({
       enable_autocmd = false,
    },
 })
+
+-- Highlighting for @-prefixed treesitter contexts.
+vim.api.nvim_set_hl(0, "@string.documentation", { link = "Comment" })
