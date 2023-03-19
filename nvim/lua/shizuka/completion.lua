@@ -17,7 +17,7 @@ capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
 local lspconfig = require('lspconfig')
-local servers = { 'pyright', 'sumneko_lua' }
+local servers = { 'pyright', 'lua_ls' }
 for _, lsp in ipairs(servers) do
    lspconfig[lsp].setup {
       -- on_attach = my_custom_on_attach,
