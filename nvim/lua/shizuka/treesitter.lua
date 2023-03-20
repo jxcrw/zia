@@ -15,7 +15,7 @@ end
 -- └─────────────────────────────────────────────────────────────────────────────
 -- This initializes treesitter-textobjects too!
 configs.setup({
-   ensure_installed = { 'rust', 'python', 'lua', 'vim', 'markdown', 'help'},
+   ensure_installed = { 'rust', 'python', 'lua', 'vim', 'fish', 'markdown', 'help'},
    sync_install = false,
    ignore_install = { '' }, -- List of parsers to ignore installing
    autopairs = { enable = true },
