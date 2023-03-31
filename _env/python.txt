@@ -19,6 +19,7 @@ ipython==8.11.0
     - executing [required: >=1.2.0, installed: 1.2.0]
     - pure-eval [required: Any, installed: 0.2.2]
   - traitlets [required: >=5, installed: 5.9.0]
+pdfkit==1.0.0
 pip==23.0.1
 pipdeptree==2.6.0
 pynvim==0.4.3
