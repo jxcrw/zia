@@ -29,6 +29,7 @@ alias stats='df -h && echo && free -g' # ROM and RAM usage (GB)
 alias dist='cat /etc/*-release'
 alias update='sudo apt update && sudo apt full-upgrade -y'
 alias suspend='systemctl suspend'
+alias calendar='cal -wy'
 
 # WSL
 alias bash='bash.exe'
