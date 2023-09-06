@@ -5,8 +5,8 @@
 	name = Jak Crow
 	email = jak@jxcrw.io
 [core]
-	# editor = subl --wait --new-window
-	editor = neovide.exe --multigrid --nofork
+	editor = subl --wait --new-window
+  # editor = neovide.exe --multigrid --nofork
 	excludesfile = "C:\\~\\.zia\\git\\.gitignore_global"
 	autocrlf = input
 	eol = lf
