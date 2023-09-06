@@ -64,6 +64,8 @@ alias matrix='cmatrix -u 15 -s'
 alias fgit='zsh "$HOME/.zia/_src/fgit.zsh"'
 alias rename='python "$WINHOME/.zia/_src/rename.py"'
 alias Chinese='python "$WINHOME/lang/zh/Chinese Grammar Wiki/study.py"'
+alias lifehud='python "$WINHOME/dev/lifehud/lifehud.py"'
+alias cards='python cli.py'
 
 # robocopy() { robocopy.exe "$1" "$2" /mir /MT:14 /unilog:"C:/~/.zia/.var/robocopy.log" }
 
