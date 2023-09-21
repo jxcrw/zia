@@ -86,11 +86,13 @@ abbr -a !! --position anywhere --function last_history_item
 
 function bye
     freeze
+    sync_anki
     python "C:\~\.zia\_src\fastscan.py"
+
     echo "kopia snapshot..."
     kopia.exe snapshot create --all --log-level=warning --no-progress >> /mnt/c/~/.zia/.logs/kopia.log 2>&1
-    echo "push all..."
 
+    echo "push all..."
     set exclude_file 'C:\~\.zia\_env\rclone_exclude.txt'
     set log_file 'C:\~\.zia\.logs\rclone_push.log'
     rclone sync 'C:\~' 'GD:\~' --fast-list --progress --drive-skip-gdocs --exclude-from=$exclude_file --log-file=$log_file --copy-links
@@ -101,9 +103,9 @@ end
 
 function freeze # Freeze current environment (apps/packages/envars/etc.)
   set_color cyan
-  echo -n freezing scoop... ; scoop export > '/mnt/c/~/.zia/_env/scoop.json'
-  echo -n python... ; pipdeptree > '/mnt/c/~/.zia/_env/python.txt'
-  echo -n envars... ; reg.exe export 'HKEY_CURRENT_USER\Environment' 'C:\~\.zia\_env\envars.reg' /y > /dev/null
+  echo -n "freezing scoop..." ; scoop export > '/mnt/c/~/.zia/_env/scoop.json'
+  echo -n "python..." ; pipdeptree > '/mnt/c/~/.zia/_env/python.txt'
+  echo -n "envars..." ; reg.exe export 'HKEY_CURRENT_USER\Environment' 'C:\~\.zia\_env\envars.reg' /y > /dev/null
   echo "done"; set_color normal
   # freeze file associations
   # freeze non-scoop apps
