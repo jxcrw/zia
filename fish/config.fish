@@ -110,6 +110,14 @@ function freeze # Freeze current environment (apps/packages/envars/etc.)
 end
 
 
+function sync_anki
+  echo -n "syncing anki..."
+  python "C:\~\dev\lifehud\lib\utils.py"
+  python "C:\~\dev\lifehud\lib\lang.py"
+  echo "done"
+end
+
+
 function fish_right_prompt
     # TODO: Make this fast, see tide (https://github.com/IlanCosman/tide) and gitstatus (https://github.com/romkatv/gitstatus)
     set git_info (python 'C:/~/.zia/fish/functions/git_info.py')
