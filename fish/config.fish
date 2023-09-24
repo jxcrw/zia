@@ -113,10 +113,13 @@ end
 
 
 function sync_anki
+  set cwd $PWD
   echo -n "syncing anki..."
+  cd ~/dev/lifehud
   python "C:\~\dev\lifehud\lib\utils.py"
   python "C:\~\dev\lifehud\lib\lang.py"
   echo "done"
+  cd $cwd
 end
 
 
