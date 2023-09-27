@@ -116,8 +116,8 @@ function sync_anki
   set cwd $PWD
   echo -n "syncing anki..."
   cd ~/dev/lifehud
-  python "C:\~\dev\lifehud\lib\utils.py"
-  python "C:\~\dev\lifehud\lib\lang.py"
+  python "C:\~\dev\lifehud\_script\sync_anki.py"
+  python "C:\~\dev\lifehud\_script\query_anki.py"
   echo "done"
   cd $cwd
 end
