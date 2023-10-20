@@ -20,6 +20,13 @@ fugashi==1.2.1
 GitPython==3.1.31
   - gitdb [required: >=4.0.1,<5, installed: 4.0.10]
     - smmap [required: >=3.0.1,<6, installed: 5.0.0]
+gTTS==2.3.2
+  - click [required: >=7.1,<8.2, installed: 7.1.2]
+  - requests [required: >=2.27,<3, installed: 2.28.2]
+    - certifi [required: >=2017.4.17, installed: 2022.12.7]
+    - charset-normalizer [required: >=2,<4, installed: 3.1.0]
+    - idna [required: >=2.5,<4, installed: 3.4]
+    - urllib3 [required: >=1.21.1,<1.27, installed: 1.26.15]
 ipython==8.11.0
   - backcall [required: Any, installed: 0.2.0]
   - colorama [required: Any, installed: 0.4.6]
