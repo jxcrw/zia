@@ -63,12 +63,9 @@ pandas==2.1.0
   - tzdata [required: >=2022.1, installed: 2023.3]
 pdfkit==1.0.0
 Pillow==10.0.0
-pip==23.0.1
+pip==23.1
 pipdeptree==2.6.0
 plyer==2.1.0
-pynvim==0.4.3
-  - greenlet [required: Any, installed: 2.0.1]
-  - msgpack [required: >=0.5.0, installed: 1.0.4]
 pyperclip==1.8.2
 PySide6==6.5.2
   - PySide6-Addons [required: ==6.5.2, installed: 6.5.2]
